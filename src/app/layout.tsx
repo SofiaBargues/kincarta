@@ -16,7 +16,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className="px-4 grid min-h-screen grid-rows-[auto,1fr,auto] container m-auto ">
+        <header className="font-bold leading-[60xp] ">Kin+Carta</header>
+        <main className="py-12"> {children}</main>
+        <footer className="text-center leading-[60px] opacity-80 ">
+          With ✨ by Sofi
+        </footer>
+      </body>
     </html>
   );
 }
